@@ -1,0 +1,862 @@
+/* 
+
+Custom styles written in order they appear in the index.html 
+
+
+*/
+
+#special {
+  
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 55%;
+  }
+  .header .mission .about .projects{
+  }
+
+}
+
+@media (max-width: 700px) {
+  .project-header {
+    text-align: center;
+  }
+  .header .mission .about .projects{
+  }
+}
+
+@media (max-width: 600px) {
+  .project-header,
+  .project-container {
+    text-align: center;
+  }
+
+  .project-img {
+    width: 100%;
+    float: none;
+    padding: 0.5rem;
+  }
+  .header .mission .about .projects{
+  }
+}
+
+@media (max-width: 1230px) {
+  div.custom-layout {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 570px) {
+  div.custom-layout {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .header .mission .about .projects{
+  }
+}
+
+.projects {
+  background: linear-gradient(to bottom, #F8F8F8, #fff);
+  padding: 10rem 30vw 0;
+}
+
+@media (max-width: 1200px) {
+  .projects {
+    padding: 10rem 10vw 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .mission-statement {
+    width: 70vw;
+  }
+}
+
+.mission-img {
+  height: 20vh;
+  float: right;
+}
+
+@media (max-width: 760px) {
+  .mission-img {
+    height: 16vh;
+  } 
+  .header .mission .about .projects{
+  }
+}
+
+@media (max-width: 600px) {
+  .mission-statement {
+    text-align: center;
+  }
+  .header .mission .about .projects{
+  }
+
+  .mission-img {
+    width: 100%;
+    padding: 0 15vw ;
+  }
+
+  .header .mission .about .projects{
+  }
+}
+
+@media (max-width: 1245px) {
+  .logo-img {
+    height: 22rem;
+  }
+
+  .header-primary-main {
+    font-size: 6rem;
+  }
+
+  .header-primary-sub {
+    font-size: 2rem;
+  }
+
+  .learn-more {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .logo-img {
+    height: 18rem;
+  }
+
+  .header-primary-main {
+    font-size: 4rem;
+    letter-spacing: normal;
+  }
+
+  .header-primary-sub {
+    font-size: 1.5rem;
+  }
+
+  .learn-more {
+    font-size: 2rem;
+    width: 40vw;
+  }
+
+  .header .mission .about .projects{
+  }
+}
+
+@media (max-width: 320px) {
+  .logo-img {
+    height: 10rem;
+  }
+
+  .header-primary-main {
+    font-size: 2rem;
+    letter-spacing: normal;
+  }
+
+  .header-primary-sub {
+    display: none;
+  }
+
+  .learn-more {
+    font-size: 1.5rem;
+    width: 50vw;
+  }
+
+  .header .mission .about .projects{
+  }
+}
+
+.flip-card {
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  border: 0;
+  background: transparent;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip-card,
+.flip-card-inner-front,
+.flip-card-inner-back {
+  width: 100%;
+  height: 20rem;
+}
+
+.flip-card-inner {
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.flip-card-inner-front,
+.flip-card-inner-back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flip-card-inner-front {
+  /*background: url(https://images.pexels.com/photos/179124/pexels-photo-179124.jpeg?w=940&h=650&auto=compress&cs=tinysrg) 0 0 no-repeat;*/
+  z-index: 2;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flip-card-inner-front span {
+  width: 100%;
+  text-align: center;
+  background: rgba(254, 254, 254, 0.8);
+  padding: 0.25rem 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.flip-card-inner-back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background: ghostwhite;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.flip-card-inner-back-title {
+  font-weight: bold;
+}
+
+.flip-card-inner-back-text {
+  line-height: 1.3;
+}
+
+
+
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    /*color: #ec9b3b;*/
+    color: #fc8003;
+    letter-spacing: 1px;
+    position: relative;
+    height: 100%;
+}
+
+.navbar .navbar-brand,
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: #ec9b3b;
+}
+
+.nav-link {
+    animation: NavbarElementsMoveInFromRight 1s;
+}
+
+.navbar-header {
+    animation: NavbarHeaderMoveInFromLeft 1s;
+}
+
+.navbar-header {
+    font-weight: 700;
+}
+
+.header {
+    background-image: linear-gradient(to right bottom, rgba(64, 64, 64, 0.8), rgba(0, 0, 0, 0.8)), url(../img/codingImg.jpg);
+    height: 100vh;
+    margin-bottom: 0px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* fills background in element */
+    /* doesnt crop the top of img */
+    position: relative;
+    text-align: center;
+}
+
+.behind-header {
+    height: 85vh;
+    width: 100vw;
+    position: absolute;
+    top: 60px;
+    background: linear-gradient(to bottom, #000000, #fff);
+    z-index: -1;
+}
+
+.logo-box {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: 1;
+}
+
+.logo-content-container {
+    position: sticky;
+    top: 70px;
+    left: 0;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: #ec9b3b;
+}
+
+.logo-link:hover {
+    text-decoration: none;
+    color: #ec9b3b;
+}
+
+.logo-img {
+    height: 200px;
+    margin-bottom: -10px;
+    animation: logoMoveDownFromTop 2s;
+    
+}
+
+.logo-caption {
+    position: sticky;
+    font-weight: 700;
+    animation: fadeIn 3s;
+}
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.header-primary {
+    backface-visibility: hidden;
+    margin-top: 125px;
+    /* fix shaking in animations */
+}
+
+.header-primary-main {
+    font-weight: 400;
+    font-size: 65px;
+    display: block;
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+    animation: moveInFromLeft 2s ease-out;
+}
+
+.header-primary-sub {
+    font-weight: 700;
+    font-size: 25px;
+    display: block;
+    padding-bottom: 30px;
+
+    animation: moveInFromRight 2s ease-out;
+}
+
+/*
+html,body{
+  height:100%;
+}
+body{
+  text-align:center;
+}
+body:before{
+  content:'';
+  height:100%;
+  display:inline-block;
+  vertical-align:middle;
+}*/
+.learn-more{
+    margin-top: 10px;
+  font-weight: 700;
+  background:#ec9b3b;
+  color:white;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:30px;
+  padding:0 1em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  animation: fadeIn 3s;
+}
+.learn-more:hover{
+  background:white;
+  color:#ec9b3b;
+}
+.learn-more:before,.learn-more:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:4px;
+  width:0;
+  background: #ec9b3b;
+  transition:400ms ease all;
+}
+.learn-more:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.learn-more:hover:before,.learn-more:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+/*
+.learn-more {
+    font-weight: 700;
+    color: #005eff;
+    background: none;
+    border: none;
+    font-size: 25px;
+    text-decoration: none;
+    animation: fadeIn 3s;
+
+}
+
+.learn-more:hover {
+    font-weight: 700;
+    color: ##005eff;
+    background: none;
+    border: none;
+    font-size: 25px;
+    text-decoration: underline;
+
+}*/
+
+.mission {
+    padding-top: 80px;
+    text-align: center;
+    width: 100%;
+
+    /*background-image: linear-gradient(to right, rgba(211,204, 227, 0.9), rgba(211,204, 227, 0.9)), url(https://coolbackgrounds.io/images/unsplash/martin-jernberg-unsplash-medium-38843106.jpg);*/
+  background-image: linear-gradient(to right, rgba(235,235, 235, 0.9), rgba(235,235, 235, 0.9)), url(https://coolbackgrounds.io/images/unsplash/martin-jernberg-unsplash-medium-38843106.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    /*background-image: url(https://coolbackgrounds.io/images/unsplash/martin-jernberg-unsplash-medium-38843106.jpg);*/
+    /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;*/
+    /*background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+
+.section-header {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.section-mission {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.section-subheader {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.mission-content {
+    text-align: center;
+    padding-bottom: 75px;
+    font-weight: 600;
+    /*background-image: url(https://coolbackgrounds.io/images/unsplash/martin-jernberg-unsplash-medium-38843106.jpg);*/
+    /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;*/
+/*
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.mission-statement {
+    width: 45vw;
+    text-align: left;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+.mission-img {
+    height: 20vh;
+    float: right;
+}
+
+.about {
+    /*background-image: linear-gradient(to right bottom, rgba(64, 64, 64, 0.8), rgba(0, 0, 0, 0.8)), url(../img/codingImg.jpg);*/
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://coolbackgrounds.io/images/unsplash/martin-jernberg-unsplash-medium-38843106.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: 50px;
+    margin-bottom: 0px;
+}
+
+.section-header {
+    font-size: 4rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 275px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 50px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: ghostwhite;
+    background-size: cover;
+    background-position: top;
+    margin-top: 20px;
+}
+
+#specificjoin {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+#specificlocation {
+  font-weight: 900;
+  font-size: 30px;
+}
+#specificproject {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+#specificsupport {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.flip-card-front-join {
+    /*background-image: url(https://i.ibb.co/YBybNgv/joinImg.jpg);*/
+    background-image: url(https://images.unsplash.com/photo-1536486239970-277f67f55a11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.flip-card-front-location {
+    background-image: url(https://marketingland.com/wp-content/ml-loads/2018/01/location-data-cityscape-ss-1920-800x450.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.flip-card-front-project {
+    background-image: url(https://www.itonlinelearning.com/wp-content/uploads/2018/06/Which-programming-langauge-should-i-learn-first-ITonlinelearning.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.flip-card-front-support {
+    background-image: url(https://miro.medium.com/max/1024/1*G2RC8w1NIUL1qK0sFVie3g.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.flip-card-front-content {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.flip-card-front-font-large {
+    font-size: 2rem;
+}
+
+.flip-card-front-font-small {
+    font-size: 1.5rem;
+}
+
+/* Style the back side */
+.flip-card-back {
+    padding: 5px;
+    background-color: ghostwhite;
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+.flip-card-back-content {
+    height: 100%;
+}
+
+.flip-card-back-font-large {
+    font-size: 20px;
+}
+
+.flip-card-back-font-medium {
+    font-size: 17px;
+}
+
+.flip-card-back-dispay-block {
+    display: block;
+}
+
+.projects {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1548092372-0d1bd40894a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80);    /*background: linear-gradient(to bottom, #F8F8F8, #fff);*/
+    padding: 75px 30vw 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 1192px) {
+    .projects {
+        padding: 100px 10vw 0;
+    }
+}
+
+.project-header {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.project-container {
+    padding-bottom: 50px;
+    font-weight: 600;
+
+
+}
+
+.project-header {}
+
+.project-caption {}
+
+.project-img {
+    width: 25vw;
+    float: right;
+    padding: 5px;
+}
+
+.orbit-project-img {
+    max-height: 200px;
+}
+
+.project-stats {
+    font-size: 14px;
+}
+
+.stat-span {
+    padding-right: 10px;
+}
+
+.footer {
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-bottom: 75px;
+    height: 25vh;
+    background: linear-gradient(to bottom, rgba(40, 40, 40, 0.8), rgba(0, 0, 0, 0.8)), url(../img/codingMyth.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(https://wallpaperbro.com/img/591404.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-info-container {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: perspective(1px) translate(-50%, -40%);
+}
+
+.footer-info {
+    display: block;
+}
+
+.footer-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.email {
+  margin-top: 10px;
+}
+
+#facebook {
+  margin-right: 10px;
+}
+
+#instagram {
+  margin-left: 10px;
+}
+
+/* animations */
+@keyframes logoMoveDownFromTop {
+    0% {
+        opacity: 1;
+        transform: translateY(-800px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes NavbarHeaderMoveInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
+@keyframes NavbarElementsMoveInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
+@keyframes moveInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
+@keyframes moveInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0)
+    }
+}

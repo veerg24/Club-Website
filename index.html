@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>NNHS Programming</title>
+	<link rel="icon" href="img/progclubLogo.png">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/mainthree.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<!-- navbar  navbar-light-->
+
+	<nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top">
+		<button class="navbar-brand navbar-header btn btn-link" name="header" onclick="animateScroll(this.name)">NNHS Programming</button>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<button class="btn btn-link nav-link" name="mission" onclick="animateScroll(this.name)">Mission</button>
+				</li>
+				<li class="nav-item">
+					<button class="btn btn-link nav-link" name="about" onclick="animateScroll(this.name)">About</button>
+				</li>
+				<li class="nav-item">
+					<button class="btn btn-link nav-link" name="projects" onclick="animateScroll(this.name)">Projects</button>
+				</li>
+				<li class="nav-item">
+					<button class="btn btn-link nav-link" name="contact" onclick="animateScroll(this.name)">Contact</button>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!--
+	<div class="logo-box">
+		<div class="logo-content-container">
+			<div class="btn btn-link logo-link" name="header">
+				<img class="logo-img" src="img/progclubLogo.png" alt="Club Logo">
+				<div class="logo-caption"> Founded In 2014 </div>
+			</div>
+		</div>
+	</div>-->
+
+	<header class="header" id="header">
+		<div class="text-box">
+			<h1 class="header-primary">
+				<img class="logo-img" src="img/progclubLogo.png" alt="Club Logo">
+				<span class="header-primary-main">NNHS Programming Club</span>
+				<span class="header-primary-sub">Welcome to our website. Learn about our club below!</span>
+				<button class="learn-more" name="mission" onclick="animateScroll(this.name)">Check It Out!</button>
+			</h1>
+
+		</div>
+	</header>
+	<div class="behind-header"></div>
+
+	<section class="mission" id="mission">
+		<div class="bg-image"></div>
+		<h1 class="section-mission">Mission</h1>
+		<h2 class="section-subheader">Spreading the Passion of Programming</h2>
+		<div class="mission-content">
+			<p class="mission-statement">
+				<img src="img/missionImg.jpg" alt="Mission Image" class="mission-img">
+				We're
+				a bunch of students with the common interest of computer programming, 3D
+				modeling, or computer science in general. Instead of programming locked up in our basements with
+				the curtains drawn and lights off, we get together at NNHS to collaborate on projects and
+				further understanding. Most importantly, we want to give NNHS students the opportunity to pursue
+				their CS interests. We have members who've been programming for years, and others for a few
+				days. No matter where you are, we'll have a spot for you.
+			</p>
+		</div>
+	</section>
+
+
+	<section class="about" id="about">
+		<h2 class="section-header header-about">About</h2>
+		<div class="cards container-fluid">
+			<div class="row">
+
+				<div class="col-lg-3 col-md-6">
+					<div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+  					<div class="flip-card-inner">
+    					<div class="flip-card-inner-front flip-card-front-join">
+      						<span id="specificjoin">Join</span>
+    					</div>
+    					<div class="flip-card-inner-back">
+      						<span class="join-info">
+							We welcome everyone to join and collaborate with us. <br> No experience necessary.
+							</span>
+    					</div>
+  					</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6">
+					<div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+  					<div class="flip-card-inner">
+    					<div class="flip-card-inner-front flip-card-front-location">
+      						<span id="specificlocation">Location</span>
+    					</div>
+    					<div class="flip-card-inner-back">
+      						<span class="flip-card-back-dispay-block">Room 217</span>
+							<span class="flip-card-back-dispay-block">Thursday X-blocks</span>
+    					</div>
+  					</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6">
+					<div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+  					<div class="flip-card-inner">
+    					<div class="flip-card-inner-front flip-card-front-project">
+      						<span id="specificproject">Project Types</span>
+    					</div>
+    					<div class="flip-card-inner-back">
+      						<span class="flip-card-back-dispay-block">iPhone apps</span>
+							<span class="flip-card-back-dispay-block">Web Development</span>
+							<span class="flip-card-back-dispay-block">Game Design</span>
+							<span class="flip-card-back-dispay-block">3D modeling</span>
+							<span class="flip-card-back-dispay-block">Bring your own ideas to the club!</span>
+    					</div>
+  					</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6">
+					<div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+  					<div class="flip-card-inner">
+    					<div class="flip-card-inner-front flip-card-front-support">
+      						<span id="specificsupport">Create</span>
+    					</div>
+    					<div class="flip-card-inner-back">
+      						<span class="support-info">
+								Have an interesting idea and want to collaborate? <br>Bring it in!<br>
+							</span>
+    					</div>
+  					</div>
+					</div>	
+				</div>	
+			</div>
+		</div>
+	</section>
+
+	<section class="projects" id="projects">
+		<div class="complete-projects">
+			<h2 class="section-header">Released Projects</h2>
+		</div>
+		<div class="current-projects">
+
+			<div class="project-container project_tigerinsider">
+				<h3 class="project-header">
+					Tiger Insider Website
+					<div class="project-stats">4+ months development time</div>
+				</h3>
+				<div class="project-caption">
+					<img src="img/aTIpic.png" alt="Tiger Insider Image" class="project-img">
+					The Tiger Insider website uses the
+					bootstrap CSS framework and silverstripe PHP for the backend. The club created some graphics to slap
+					on the website and hired a gfx artist online to create an article placeholder banner. We like to use
+					our own code, so bootstrap CSS was the optimal way in efficiency and creativity. Of course, like any
+					programming project, we had our share of keyboard-smashing moments.</div>
+			</div>
+
+			<div class="project-container project_lua">
+				<h3 class="project-header">
+					3D OOP Lua game
+					<div class="project-stats">
+						<span class="stat-span">12+ months development</span>
+						<span class="stat-span">Played 100,000+ Times</span>
+						<span class="stat-span">1,600$+ in sales </span>
+					</div>
+				</h3>
+				<div class="project-caption">
+					<img src="img/aBlendPic.png" alt="Blender Image" class="project-img">
+					We won't mention the name of this game, partly to protect our anonymity if any of our players find
+					out about this website. It's an action combat multiplayer fighting game. We used an object-oriented
+					version of Lua and blender. The physics engine used was roblox studio. The game is now released on
+					the roblox
+					platform. Over the course development period, we hired various gfx artists and 3D
+					modelers online to create art assets.</div>
+			</div>
+
+			<div class="project-container">
+				<h3 class="project-header">
+					Orbit - A Space Game
+					<div class="project-stats">
+						<span class="stat-span">3+ months development</span>
+						<span class="stat-span"> Downloaded 10,000 Times</span>
+					</div>
+				</h3>
+				<div class="project-caption">
+					<img src="img/aOrbit.jpg" height="200px" alt="Orbit Image" class="project-img orbit-project-img">
+					This is one of our more known projects by NNHS students. It's a neat scroller app game to play when
+					class gets boring. We used swift/xcode and even made the music with garage band. It's now released
+					on the app store.</div>
+			</div>
+
+			<!--
+			<div class="project-container">
+				<h3 class="project-header">
+					Dice Simulation
+					<div class="project-stats">2-3 meetings development time</div>
+				</h3>
+				<div>
+					<div class="project-caption">
+						<img src="img/aTwoDice.png" alt="Dice Image" class="project-img">
+						This was a fun mini project made by a member who joined with zero experience. It's in python and
+						simply simulates the outcomes of two rolls of dice. It then has some conditions to see whether
+						the user has won based on some rules.
+					</div>
+				</div>
+			</div>-->
+
+			<div class="project-container">
+				<h3 class="project-header">
+					Our Website
+					<div class="project-stats">1 month development time</div>
+				</h3>
+				<div>
+					<div class="project-caption">
+						<img src="img/progclubLogo.png" alt="Programming Club Logo" class="project-img">
+						We started this website back in early 2016. Then we decided to work on other projects and let it
+						sit
+						for about a year. Now we have dusted it off and are working on it again. This webpage focuses
+						mainly on custom css styles.
+						This webpage was completly revamped in September, 2019.
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="footer" id="contact">
+		<div class="footer-info-container">
+			<span class="footer-info footer-title">Contact</span>
+			<a id="facebook" href="https://www.facebook.com/groups/293459344434857/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEU6VZ////81Up0yT5xgc61+jbsvTZyXo8hFXaOirM0nSJmlrs7O1OUkRpkfQ5c1UZ1oerKHlcDp6/M9WKHHzeHV2ulxgravt9Td4Ozl6PGDkb7ByN5YbatQZ6j29/q3v9h2hrhMY6aQnMSsAnKHAAAC70lEQVR4nO3caXLiMBRFYdoihhhsQ5jDlPT+F9mdqv7bRrYQ7z7XOQug9BUWHiQzmRARERERERERERERERERqVe0IZQPCtaDHFwo62Yz/VrP3jtbrH0Sy7rYH46/YtpV1oPtX6jCbBel+2npThjq/Taa51AYmrdTH583YdHsP/r5nAnLTa/j05+w+ezv8yRsq/MQoB9hmPeegb6E5eU2DOhFWK4G+rwIw3CgD2G4Dge6ELaboXPQi7CJu4nwK6zvKUAHwvCVBHQgrFMmoQdh4jGqL2wviUB5YRP/uMKnsJ2mAtWF9XLkwjblcs2FsDqMXZh6LpQXhn06UFtYpZ7t5YX1wEczboTF/AlAaWFYP0OovPZU9pmGt9194W79sIq/Jt2uqqrytwbcxJ4NT9e6tR7soEIk8N749E2K7zjgubEe6dAi75yOboGxwrnTQ/RvRZTwIHy6e1SccF5Yj3N4UcJjbT3MhKKEh9J6mAlFCZWvyR4WJXxDqBxChPohRKgfQoT6IUSoH0KE+iFEqB9ChPqNQ1h0vKJcxWwt/aofvelsDFzNOlpECO9dH/DT+8ZUWMYgErNdfXuB8Ga7RPwCofHy2wuE59EfpQvbH9MXCNejF65st2q8QPhtu5Mhv/BmfE2TX/hhvGMqv3BpvBslv/BuvGUqv3A2+nloff+YX3gx3rmYX2j9CCC78Ga9NzO78GS9dTG7cDv679B8c2Z24e/R/9LsRy+8Wm/kzy60nobZhdb3TvmF9u8e5hYaP0p8gfB99PPQ/l2F3MKp+StDuYXWvuxC60eJ+YXm907ZhQJ/NlA+4d9ZOrrbH6WTzbyjmL+D/Oz6BNsl/H8V/y9E7TYpOz7BGveoceyn6QohQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLs0R8aFUYEFLSeAgAAAABJRU5ErkJggg==" width="50" height="50"></a>
+
+			<a id="instagram" href="https://www.instagram.com/nnhsprogramming/"><img src="http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png" width="57" height="57"></a>
+
+			<span class="footer-info email">Email Us! <a href="mailto:nnhsprogramming@gmail.com">nnhsprogramming@gmail.com</a></span>
+			<span class="footer-info">Club President: Veer Gadodia, Officers: Andrew Lee & Jacob Chang</span>
+		</div>
+	</section>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
